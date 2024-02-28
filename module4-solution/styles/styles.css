@@ -1,0 +1,83 @@
+h1 {
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  width: 200px;
+  float: left;
+}
+.narrow-button {
+  float: left;
+  margin-left: 10px;
+}
+.loader {
+  display: none;
+  margin-left: 5px;
+  font-size: 10px;
+  float: left;
+  border-top: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-right: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-bottom: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-left: 1.1em solid #676767;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.foundItm{
+  display: inline-block;
+}
+.errorMessage {
+  color: #e83c3c;
+  display: inline-block;
+  font-size: medium;
+  width: 100%;
+}
+
+.category-grid {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column width as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+
+.category-item {
+  text-align: center; /* Center align the content */
+  padding: 10px;
+  border: 1px solid #ccc; /* Add borders around grid items */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.category-item a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.category-item i {
+  margin-right: 5px; /* Add margin between icon and text */
+}
